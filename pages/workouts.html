@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Home - ToKa</title>
+    <title>Workouts - ToKa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/styles.css" />
 
-    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.png">
   </head>
 
   <body>
@@ -25,7 +25,18 @@
           <ul class="right-buttons">
             <li><a href="/pages/contact.html">Contact</a></li>
             <li><a href="/pages/about.html">About</a></li>
-            <li class="account-button"><a href="#">Sign In</a></li>
+            <div class="dropdown">
+              <li class="account-button"><a href="#">Account</a></li>
+              <div class="dropdown-items">
+                <a href="#">My Account</a>
+                <a href="#">Membership</a>
+                <a href="#">Friends (0)</a>
+                <a href="#">Settings</a>
+                <div class="sign-out">
+                  <a href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
           </ul>
         </nav>
     </header>
@@ -45,32 +56,29 @@
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Cycling is a great way to stay active while exploring your surroundings. 
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            It can also be an efficient and environmentally friendly way to travel.
           </p>
         </div>
 
         <div class="box">
           <div class="row">
             <div class="workout-box">
-              <img src="/assets/workout-icons/run_light.png">
+              <img src="/assets/workout-icons/sprint_light.png">
               <h2 style="justify-content: center; padding-left: 2rem;">Running</h2>
             </div>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Running is an effective way to build stamina and improve cardiovascular fitness. 
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+             Whether done outdoors or on a treadmill, 
+             it can be easily adapted to different fitness levels. 
           </p>
         </div>
 
@@ -83,13 +91,11 @@
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Swimming is a low-impact activity that works many different muscle groups at once. 
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            It can help improve endurance and is a useful skill for both exercise and safety.
           </p>
         </div>
       </div>
@@ -103,13 +109,11 @@
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Badminton is a fast-paced sport that requires quick reactions and good coordination. 
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Players use a racket to hit a shuttlecock over a net, making it both challenging and enjoyable.
           </p>
         </div>
 
@@ -117,37 +121,36 @@
           <div class="row">
             <div class="workout-box">
               <img src="/assets/workout-icons/dumbells_light.png">
-              <h2 style="justify-content: center; padding-left: 2rem;">Dumbells</h2>
+              <h2 style="justify-content: center; padding-left: 2rem;">Weight Lifting</h2>
             </div>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Weight lifting involves using resistance, such as dumbbells,
+            to strengthen and develop muscles.
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            Regular training can also improve overall strength, coordination,
+            and physical fitness.
           </p>
         </div>
 
         <div class="box">
           <div class="row">
             <div class="workout-box">
-              <img src="/assets/workout-icons/sports_light.png">
+              <img src="/assets/workout-icons/tennis_light.png">
               <h2 style="justify-content: center; padding-left: 2rem;">Tennis</h2>
             </div>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            A game of tennis involves hitting a ball back and forth across a net using a racket. 
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectur this is not some more words that 
-            i am saying just to fill each line out 
+            It develops agility, coordination, 
+            and endurance while also requiring players to think strategically.
           </p>
         </div>
       </div>
@@ -155,24 +158,32 @@
     </div>
 
     <footer>
-        <div class="footer-column">
-            <div class="footer-titles">Navigation</div>
-            <ul>
-                <li class="footer-text"><a href="/pages/fitness.html">Fitness</a></li>
-                <li class="footer-text"><a href="/pages/healthyliving.html">Healthy</a></li>
-                <li class="footer-text"><a href="/pages/workouts.html">Workouts</a></li>
-            </ul>
+        <div class="categories">
+            <div class="footer-column">
+                <div class="footer-titles">Navigation</div>
+                <ul>
+                    <li class="footer-text"><a href="/pages/fitness.html">Fitness</a></li>
+                    <li class="footer-text"><a href="/pages/healthyliving.html">Healthy</a></li>
+                    <li class="footer-text"><a href="/pages/workouts.html">Workouts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-titles">About Us</div>
+                <ul>
+                    <li class="footer-text"><a href="/pages/about.html">About</a></li>
+                    <li class="footer-text"><a href="/pages/contact.html">Contact</a></li>
+                    <li class="footer-text"><a href="/pages/policy.html">Privacy Policy</a></li>
+                    <li class="footer-text"><a href="/pages/policy.html">Cookies Policy</a></li>
+                </ul>
+
+            </div>
         </div>
 
-        <div class="footer-column">
-            <div class="footer-titles">About Us</div>
-            <ul>
-                <li class="footer-text"><a href="/pages/about.html">About</a></li>
-                <li class="footer-text"><a href="/pages/contact.html">Contact</a></li>
-                <li class="footer-text"><a href="#">Privacy Policy</a></li>
-                <li class="footer-text"><a href="#">Cookies Policy</a></li>
-            </ul>
-
+        <div class="contact">
+            <p style="font-weight: bold;">© 2026 ToKa Fitness</p>
+            <a href="mailto:email@example.com"><p><b style="color: #bbd94d;">E</b> email@example.com</p></a> 
+            <a href="tel:01234567890" style="margin-top: -1rem;"><p><b style="color: #bbd94d;">T</b> 01234 567890</p></a>   
         </div>
     </footer>
 

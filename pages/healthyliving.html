@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Home - ToKa</title>
+    <title>Healthy Living - ToKa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/styles.css" />
 
-    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.png">
   </head>
 
   <body>
@@ -25,37 +25,118 @@
           <ul class="right-buttons">
             <li><a href="/pages/contact.html">Contact</a></li>
             <li><a href="/pages/about.html">About</a></li>
-            <li class="account-button"><a href="#">Sign In</a></li>
+            <div class="dropdown">
+              <li class="account-button"><a href="#">Account</a></li>
+              <div class="dropdown-items">
+                <a href="#">My Account</a>
+                <a href="#">Membership</a>
+                <a href="#">Friends (0)</a>
+                <a href="#">Settings</a>
+                <div class="sign-out">
+                  <a href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
           </ul>
         </nav>
     </header>
 
-
     <div class="content">
-      <h1>Healthy living</h1>
-      <p> This is som,e text</p>
+
+      <h1 class="greeting-text">Healthy Living</h1>
+      <p class="subtitle-text">A few tips to help you to live your best, most fulfilling life!</p>
+
+
+
+            <div class="row">
+        <div class="box">
+          <div class="row">
+            <div class="workout-box">
+              <img src="/assets/workout-icons/water_light.png">
+              <h2 style="justify-content: center; padding-left: 2rem;">Drink Water</h2>
+            </div>
+          </div>
+
+          <p>
+            Drinking water helps keep your body hydrated, which is important for energy, 
+            concentration, and overall health.
+          </p>
+
+          <p>
+             It also helps your body regulate temperature and supports digestion 
+             and the removal of waste.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="row">
+            <div class="workout-box">
+              <img src="/assets/workout-icons/food_light.png">
+              <h2 style="justify-content: center; padding-left: 2rem;">Eat Healthy</h2>
+            </div>
+          </div>
+
+          <p>
+            Eating healthy gives your body the nutrients it needs to stay strong
+             and have enough energy throughout the day.
+          </p>
+
+          <p>
+            A balanced diet can also support your immune system, improve concentration, 
+            and help you stay healthy.
+          </p>
+
+          <a href="#" style="font-weight: bold;">>> Meal Plans</a>
+        </div>
+
+        <div class="box">
+          <div class="row">
+            <div class="workout-box">
+              <img src="/assets/workout-icons/mindfulness_light.png">
+              <h2 style="justify-content: center; padding-left: 2rem;">Stay calm</h2>
+            </div>
+          </div>
+
+          <p>
+            Mental health matters. That's why you should always keep on top of it.
+          </p>
+
+          <p>
+            Meditation, moderate exercise and good sleep can help to keep your mind
+            sharp, and your mental focus clear. 
+          </p>
+        </div>
+      </div>
 
     </div>
 
     <footer>
-        <div class="footer-column">
-            <div class="footer-titles">Navigation</div>
-            <ul>
-                <li class="footer-text"><a href="/pages/fitness.html">Fitness</a></li>
-                <li class="footer-text"><a href="/pages/healthyliving.html">Healthy</a></li>
-                <li class="footer-text"><a href="/pages/workouts.html">Workouts</a></li>
-            </ul>
+        <div class="categories">
+            <div class="footer-column">
+                <div class="footer-titles">Navigation</div>
+                <ul>
+                    <li class="footer-text"><a href="/pages/fitness.html">Fitness</a></li>
+                    <li class="footer-text"><a href="/pages/healthyliving.html">Healthy</a></li>
+                    <li class="footer-text"><a href="/pages/workouts.html">Workouts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-titles">About Us</div>
+                <ul>
+                    <li class="footer-text"><a href="/pages/about.html">About</a></li>
+                    <li class="footer-text"><a href="/pages/contact.html">Contact</a></li>
+                    <li class="footer-text"><a href="/pages/policy.html">Privacy Policy</a></li>
+                    <li class="footer-text"><a href="/pages/policy.html">Cookies Policy</a></li>
+                </ul>
+
+            </div>
         </div>
 
-        <div class="footer-column">
-            <div class="footer-titles">About Us</div>
-            <ul>
-                <li class="footer-text"><a href="/pages/about.html">About</a></li>
-                <li class="footer-text"><a href="/pages/contact.html">Contact</a></li>
-                <li class="footer-text"><a href="#">Privacy Policy</a></li>
-                <li class="footer-text"><a href="#">Cookies Policy</a></li>
-            </ul>
-
+        <div class="contact">
+            <p style="font-weight: bold;">© 2026 ToKa Fitness</p>
+            <a href="mailto:email@example.com"><p><b style="color: #bbd94d;">E</b> email@example.com</p></a> 
+            <a href="tel:01234567890" style="margin-top: -1rem;"><p><b style="color: #bbd94d;">T</b> 01234 567890</p></a>   
         </div>
     </footer>
 

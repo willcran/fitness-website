@@ -64,6 +64,7 @@ nav {
     gap: 20px;
     list-style: none;
     margin: 0;
+    margin-left: 2rem;
     padding: 0;
 }
 
@@ -82,6 +83,7 @@ nav {
 .centre-nav {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     transition: transform 0.3s ease-in-out;
 }
@@ -97,7 +99,7 @@ nav {
     transform: translate3d(10px);
 }
 
-/* Sign-in / Account button */
+/* Account button dropdown */
 .account-button {
     padding: 0.5rem;
     cursor: pointer;
@@ -105,14 +107,48 @@ nav {
     transition: transform 0.3s ease-in-out;
 }
 
+.dropdown {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.dropdown-items a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-items a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+}
+
 .account-button a {
     color: inherit;
 }
 
-.account-button:hover {
-    background-color: #061b13;
+.account-button:hover,
+.dropdown-items {
+    background-color: white;
+    color: black;
+}
+
+.sign-out a {
+    display: block;
+}
+
+.sign-out a:hover {
+    background-color: #cd3030;
     color: white;
-    transform:perspective()
 }
 
 
@@ -120,11 +156,17 @@ nav {
 /* === Footer === */
 footer {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     padding: 2rem;
     padding-left: 6rem;
+    padding-right: 6rem;
     border-top: 1px solid black;
+}
+
+.categories {
+    display: flex;
+    justify-content: start;
 }
 
 .footer-titles {
@@ -147,6 +189,13 @@ footer {
     transform: translateX(5px);
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items:start;
+}
 
 
 /* === Page Contents === */
@@ -193,7 +242,7 @@ footer {
     color: white;
 
     min-width: 300px;
-    min-height: 200px;
+    min-height: 300px;
 
     max-width: 310px;
 
@@ -285,6 +334,64 @@ footer {
 }
 
 
+/* Contact Page */
+
+
+.centred-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    min-width: 700px;
+
+    margin: 2rem;
+    padding: 4rem;
+
+    border: 2px solid #1a1a1a;
+    background-color: #0c0c0c;
+    color: white;
+    border-radius: 16px;
+}
+
+input[type=text], select, textarea {
+    padding: 12px; 
+    border: 1px solid white;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: white;
+    background: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 16px;
+
+    font-weight: bold;
+    min-width: 3rem;
+
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    cursor: url("/assets/cursor-files/cursor_link.png"), pointer;
+}
+
+input[type=submit]:hover {
+    transform: translateY(-10px);
+}
 
 @media (prefers-color-scheme: dark) {
     
@@ -300,12 +407,31 @@ footer {
     footer {
         border-top: 1px solid white;
     }
+
+    /*Account Button / Dropdown */
     
     .account-button:hover {
         border: 1px solid white;
         background-color: white;
         color: black;
     }
+
+    .dropdown-items a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .dropdown-items {
+        background-color: #131313;
+        color: white;
+    }
+
+    .sign-out a:hover {
+        background-color: #cd3030;
+        color: white;
+    }
+
+    /*Page contents */
 
     .box {
         border: 2px solid #1a1a1a;
@@ -318,6 +444,18 @@ footer {
         border: 1px solid white;
         color: black;
 
+        color: black;
+    }
+
+    .about-titles {
+        border-left: 10px solid rgb(73, 219, 114);
+    }
+
+    input[type=submit] {
+        background-color: white;
+        background: white;
+        border: 1px solid white;
+        color: black;
     }
 
     .about-titles {
@@ -326,7 +464,7 @@ footer {
 
 }
 
-/* === Mobile Layout === */
+/* Mobile Layout  */
 @media screen and (max-width: 700px) {
 
     .content {

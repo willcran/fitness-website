@@ -150,3 +150,26 @@ Overall, pretty good.
 ### Solution: Use padding and margins to position them as I wish
 ### Learning: How to position items using CSS
 
+## Date: 22/08/2026
+### Time Spent: 7 hours
+### Activity: 
+- Updating workouts page
+- Creating healthy living page
+- Updating header/footer
+
+### Problem: (footer) the Email/Telephone links are on the left, next to the nav links instead of on the far right where I want them
+### Solution: Create a new class called "Contact" to group all those together, then update the footer to justify content with "space between" - the same i did with the header, so that the items automatically are on the opposite side of the page.
+### Learning: Learning more about how justify-content works, and where it can be applied
+
+### Problem: (header) The 'Account' dropdown doesn't actually function as a dropdown.
+### Solution: create different classes - dropdown items, dropdown, account-button. Then lay them out and sort out the css so that when the account button is hovered over, the dropdown appears. and when each dropdown item is hovered over, the background is turned white and the text inverted. 
+### Learning: How dropdowns are created and layed out. 
+
+### Problem (header) The sign out button in the account dropdown doesn't turn red when hovering like i wanted it to. I originally put the class inside of the <a> for the sign out button, but that didnt work
+
+```
+ <a href="#" class="sign-out">Sign Out<a>
+```
+### Solution: I decided to wrap it with a div instead of trying inline. that worked.
+### Learning: Not everything can be done inline. Some things like class inheritance must be done with a wrapped function rather than trying to do it inline.
+
