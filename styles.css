@@ -41,6 +41,7 @@ nav {
 }
 
 .theme-button{
+    display: flex;
     border: 1px solid black;
     border-radius: 1000px;
 
@@ -49,11 +50,20 @@ nav {
 
     min-width: 60px;
     min-height: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
 }
 
 .theme-button img {
-    min-width: 20px;
-    min-height: auto;
+    max-width: 20px;
+    max-height: 20px;
+
 }
 
 .left-buttons,
