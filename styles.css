@@ -83,7 +83,7 @@
 }
 
 /* Forced colour change */
-html[theme="light"] {
+html[data-theme="light"] {
     --background: #e3ffe5;
     --text-colour: black;
 
@@ -123,7 +123,7 @@ html[theme="light"] {
     --submit-text: black;
 }
 
-html[theme="dark"] {
+html[data-theme="dark"] {
     --background: #1f2b26;
     --text-colour: white;
 
