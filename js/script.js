@@ -8,6 +8,7 @@ const themeIcon = document.getElementById("themeIcon");
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme !== "system") {
+    document.body.classList.add(savedTheme)
     html.setAttribute("theme", savedTheme);
 }
 
