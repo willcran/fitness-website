@@ -215,6 +215,8 @@ nav {
     background-color: var(--button-background);
     border-radius: 1000px;
 
+    cursor: url("/assets/cursor-files/cursor_link.png"), pointer;
+
     max-width: 40px;
     max-height: 30px;
 
