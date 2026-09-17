@@ -4,6 +4,9 @@ const html = document.documentElement;
 const themeButton = document.getElementById("themeButton");
 const themeIcon = document.getElementById("themeIcon");
 
+const userName = document.getElementById("userName");
+const nameText = document.getElementById("nameText");
+
 /* Loads the preferred theme from storage */
 const savedTheme = localStorage.getItem("theme");
 const savedIcon = localStorage.getItem("icon");
@@ -48,3 +51,31 @@ function themeCycle() {
 }
 
 themeButton.addEventListener("click", themeCycle);
+
+
+/* Name Change */
+const savedName = localStorage.getItem("name");
+
+
+/* If the heading exists and there's a saved name already available */
+if (nameText && savedName) {
+    nameText.textContent = `Welcome, ${savedName}`;
+}
+
+
+/* If there a userName input field, then...
+1. Find the form containing the input
+2. Wait for the user to press submit
+3. Stop the browser from reloading the page (default behaviour with forms)
+4. Set the value in userName to the "name" key in localStorage
+5. Send user to the homepage.
+*/
+if (userName) {
+    const form = userName.closest("form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        localStorage.setItem("name", userName.value);
+        window.location.href = "/index.html";
+    });
+}
