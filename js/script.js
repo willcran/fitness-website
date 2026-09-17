@@ -53,19 +53,21 @@ function themeCycle() {
 themeButton.addEventListener("click", themeCycle);
 
 
+
 /* Name Change */
 const savedName = localStorage.getItem("name");
 
 
-/* If the heading exists and there's a saved name already available */
+/* If the heading exists and there's a saved name already available,
+then set the heading text to "Welcome, savedName" */
 if (nameText && savedName) {
     nameText.textContent = `Welcome, ${savedName}`;
 }
 
 
 /* If there a userName input field, then...
-1. Find the form containing the input
-2. Wait for the user to press submit
+1. Find the form containing the userName input
+2. Wait for the user to press submit (eventListener)
 3. Stop the browser from reloading the page (default behaviour with forms)
 4. Set the value in userName to the "name" key in localStorage
 5. Send user to the homepage.
